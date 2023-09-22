@@ -1,0 +1,15 @@
+ <div *ngIf="show">
+  <div class="topnav shadow p-4 mb-5">
+    <h3 style="font-weight: bolder;font-size:22px;text-align:center">TASK MANAGEMENT SYSTEM</h3>
+  </div>
+
+  <br><br><br><br><br><br>
+
+  <div class="box mt-5 p-5">
+    <h3 style="color: white;">Choose Login Role ?</h3>
+    <a class="btn btn-warning" routerLink="/userregistration">User Registration</a>
+    <a class="btn btn-success" routerLink="/userlogin">User Login</a>
+    <a class="btn btn-danger" [routerLink]="['/admindashboard']">Admin Login</a>
+  </div>
+</div>
+<router-outlet></router-outlet>
